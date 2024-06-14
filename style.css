@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+/* ========================================
+  レイアウト用
+========================================= */
+html {
+  font-size: 100%;
+}
+
+body {
+  background: url(images/mainbg.png);
+  background-size: cover;
+  border-top: 5px solid #d96c6c;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+div#wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 7px rgba(83, 78, 61, 0.3);
+}
+
+/* ========================================
+  ヘッダー用
+========================================= */
+
+header {
+  max-width: 1100px;
+  height: 100px;
+  padding: 20px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 12px;
+  color: #555555;
+  background: url(images/hederlogo.png) no-repeat;
+  padding-left: 51px;
+  line-height: 15px;
+  height: 49px;
+}
+
+header h1 span {
+  font-family: "Tangerine", cursive;
+  font-size: 35px;
+  color: #734f24;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav {
+  margin-top: 36px;
+}
+
+header nav .item {
+  margin-left: 29px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  height: 26px;
+  display: inline-block;
+}
+
+header nav .item:hover {
+  background: url(images/navbar.png) no-repeat center bottom;
+  height: 36px;
+  display: inline-block;
+}
+
+header nav .item a {
+  text-decoration: none;
+  color: #734f24;
+}
+
+header nav .item:hover a {
+  color: #345c39;
+  border-bottom: 4px solid #345c39;
+}
+
+.pageheader {
+  display: flex;
+  justify-content: space-between;
+}
+
+a#nav_tel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* ========================================
+  メイン画像用
+========================================= */
+
+div#mainimage {
+  max-width: 1100px;
+  height: 300px;
+  margin: 0 0 20px 0;
+  border: 5px solid #fff;
+}
+
+div#mainimage img {
+  width: 98%;
+  height: 290px;
+  object-fit: cover;
+}
+
+/* ========================================
+  メインページarticle用
+========================================= */
+
+article {
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+article h2,
+article h3 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #734339;
+  border-left: 5px solid #ba3009;
+  padding-left: 10px;
+}
+
+article ul {
+  overflow: scroll;
+  height: 145px;
+}
+
+article ul li {
+  font-size: 13px;
+  font-weight: normal;
+  color: #927e7a;
+  border-bottom: 1px dotted #d0d0d0;
+  line-height: 32px;
+}
+
+article ul li span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #b5b3b3;
+  margin-right: 15px;
+}
+
+/* ========================================
+  メインページaside用
+========================================= */
+
+aside {
+  width: 38%;
+  height: 198px;
+}
+
+aside ul li {
+  line-height: 60px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+aside ul li a {
+  width: 100%;
+  height: 60px;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  color: #734f24;
+  text-align: center;
+}
+
+aside ul li a#contact {
+  background: url(images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+aside ul li a#blog {
+  background: url(images/blog.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ========================================
+  フッター用
+========================================= */
+
+footer {
+  width: 100%;
+  height: 58px;
+  background-color: #d96c6c;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 58px;
+}
+
+/* ========================================
+  メニュー一覧
+========================================= */
+
+h2#heading_m {
+  background: url(images/menutitle.jpg);
+  max-width: 1100px;
+  height: 70px;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #6ec388;
+  line-height: 70px;
+  padding-left: 23px;
+}
+
+article dl {
+  margin-top: 11px;
+}
+
+article dl dt {
+  font-size: 15px;
+  font-weight: normal;
+  color: #734f24;
+}
+
+article dl dd {
+  font-size: 13px;
+  font-weight: normal;
+  color: #927e7a;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+article dl dd:last-child {
+  margin-bottom: 0;
+}
+
+span {
+  color: #734f24;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+article table {
+  align-items: center;
+}
+
+article th {
+  font-size: 13px;
+  font-weight: normal;
+  color: #927e7a;
+  width: 400px;
+}
+
+/* ========================================
+  コンタクトページ
+========================================= */
+
+h2#heading_c {
+  background: url(images/contacttitle.jpg);
+  max-width: 1100px;
+  height: 70px;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #6ec388;
+  line-height: 70px;
+  padding-left: 23px;
+}
+
+p#contact_text {
+  color: #927e7a;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #ffefea;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+td.form_title,
+article .form_title {
+  width: 131px;
+  height: 32px;
+  font-size: 15px;
+  color: #734f24;
+  vertical-align: top;
+}
+
+article .form_title {
+  height: 20px;
+  margin-top: 10px;
+}
+
+td.form_contents,
+article .form_contents {
+  font-size: 13px;
+  color: #a6a6a6;
+}
+
+td.form_title label,
+article .form_title label {
+  font-weight: bold;
+}
+
+td.form_contents input#form_name,
+td.form_contents input#form_tel {
+  width: 421px;
+  height: 22px;
+  border: 1px solid #a6a6a6;
+}
+
+article .form_contents input#form_name,
+article .form_contents input#form_tel {
+  width: 100%;
+  height: 22px;
+  border: 1px solid #a6a6a6;
+}
+
+td.form_contents input.form_time {
+  width: 47px;
+  height: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  border: 1px solid #a6a6a6;
+}
+
+article .form_contents input.form_time {
+  width: 47px;
+  height: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  border: 1px solid #a6a6a6;
+}
+
+td.form_contents textarea {
+  width: 421px;
+  height: 83px;
+  border: 1px solid #a6a6a6;
+}
+
+article .form_contents textarea {
+  width: 100%;
+  height: 83px;
+  border: 1px solid #a6a6a6;
+}
+
+p#submit {
+  text-align: right;
+}
+
+p#submit input {
+  background-color: #386947;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  width: 136px;
+  height: 40px;
+}
+
+p#submit input:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* ↓スマホ対応 */
+
+@media (max-width: 600px) {
+  /* ヘッダー */
+
+  header {
+    font-size: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    margin-top: 5px;
+  }
+  header a {
+    margin-top: -25px;
+  }
+  div#mainimage,
+  h2 {
+    margin-top: 30px;
+    text-align: center;
+  }
+  div#mainimage img {
+    align-items: center;
+  }
+
+  h2#heading_c,
+  h2#heading_m {
+    background: url(images/sptitle.jpg);
+  }
+
+  .contents {
+    font-size: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  article {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  aside {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  h2#heading_c,
+  h2#heading_m {
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px -1px 0 #fff, 0px 1px 0 #fff, 0-1px 0 #fff, -1px 0 0 #fff, 1px 0 0 #fff;
+  }
+  #pcmenu {
+    display: none;
+  }
+
+  #pcform {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  #spmenu {
+    display: none;
+  }
+
+  #spform {
+    display: none;
+  }
+}
+
+/* iPad,PCでTELさせない */
+@media (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
